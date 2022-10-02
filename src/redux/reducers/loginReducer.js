@@ -10,7 +10,7 @@ export const loginReducer = (state = initialState, action) => {
     switch(action.type) {
         case ENTER_TO_SYSTEM:
             return {...state, 
-                loginForm: cookies.set('JSESSIONID', action.payload.token)
+                // loginForm: cookies.set('JSESSIONID', action.payload.token)
             }
         case LOGGED_TO_SYSTEM:
             return {...state, isLogged: action.payload}

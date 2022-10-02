@@ -28,7 +28,7 @@ export const LoginForm = () => {
     return (
         <div className={styles.loginContent}>
             <div className={styles.loginInner}>
-                <div className={styles.loginInner__title}>Форма регистрации</div>
+                <div className={styles.loginInner__title}>Войти в систему</div>
                 <form className={styles.loginForm}>
                     <div className={styles.loginInputs}>
                         <MyInput
