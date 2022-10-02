@@ -100,7 +100,7 @@ const customStylesFriend = {
     },
 }
 
-const BASE_URL = 'http://5.252.21.123:8080';
+const BASE_URL = 'http://localhost:8080';
 
 export const MainPage = () => {
 
@@ -156,7 +156,7 @@ export const MainPage = () => {
         cookie.remove('JSESSIONID');
         navigate('/');
         dispatch(loggedToSystem(false));
-        await axios.get('http://5.252.21.123:8080/logout');
+        await axios.get('http://localhost:8080/logout');
     }
 
     const sendReaction = useCallback((reactionId) => {
@@ -265,8 +265,6 @@ export const MainPage = () => {
             }))
         }
     }, [notifications])
-
-    console.log(friendsRequests);
 
     return (
         <div className={styles.mainPage}>
